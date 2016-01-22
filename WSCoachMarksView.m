@@ -181,6 +181,10 @@ static const BOOL kEnableSkipButton = YES;
                      }];
 }
 
+- (void)stop {
+    [self cleanup];
+}
+
 - (void)skipCoach {
     [self goToCoachMarkIndexed:self.coachMarks.count];
 }
